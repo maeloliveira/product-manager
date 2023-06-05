@@ -1,6 +1,6 @@
 import mongoose from "mongoose"
 
-mongoose.connect("mongodb+srv://mael_db:15952010m@product-manager-store.jrvdfrf.mongodb.net/");
+mongoose.connect("");
 
 let db = mongoose.connection;
 
