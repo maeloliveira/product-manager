@@ -4,6 +4,9 @@ class ProductController {
   static listProduct = (req, res) => {
     products.find((err, products) => {
       res.status(200).json(products);
+      if(err){
+        res.status(400).send({message: `${err.message} Error at search`})
+      }
     });
   };
   static listProductbyId = (req, res) => {
