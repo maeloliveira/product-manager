@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema(
         name: {type: String},
         document: {type: Number},
         company: {type: String},
-        salary: {type: String},
+        salary: {type: Number},
         adress: {type: String}
     }
 );
