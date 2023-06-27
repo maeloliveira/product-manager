@@ -4,6 +4,8 @@ import UserController from "../controllers/contractController.js";
 const router = express.Router();
 
 router
-.post("/contract", UserController.createContract)
+.post("/contracts", UserController.createContract)
+.get("/contracts", UserController.listContractById)
+.get("/contracts", UserController.listContract)
 
 export default router;
